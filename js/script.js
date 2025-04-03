@@ -39,14 +39,9 @@
       }
     }
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    console.log('Wylosowana liczba to: ' + randomNumber);
-
-    let computerMove = getMoveName(randomNumber);
-    console.log('Ruch komputera to: ' + computerMove);
-
-    let playerMove = getMoveName(playerInput);
-    console.log('Twój ruch to: ' + playerMove);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
+    const computerMove = getMoveName(randomNumber);
+    const playerMove = getMoveName(playerInput);
 
     displayResult(computerMove, playerMove);
   }
